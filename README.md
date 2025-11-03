@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ## Development Status
 
 - [x] Project setup
-- [ ] Database models
+- [X] Database models
 - [ ] Core shortening logic
 - [ ] API endpoints
 - [ ] Testing
