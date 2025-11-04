@@ -122,6 +122,7 @@ Main entry point for the application
 
 import os
 from flask import Flask, request, jsonify, redirect
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 
@@ -135,6 +136,7 @@ from .config import config
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app)
 
 # Get configuration
 env = os.getenv('FLASK_ENV', 'development')
