@@ -12,12 +12,12 @@ A Python REST API service that converts long URLs into short, memorable links.
 
 - **Framework**: Flask
 - **Database**: SQLite
-- **Language**: Python 3.9+
+- **Language**: 3.12.10
 
 ## Setup
 
 ### Prerequisites
-- Python 3.9+
+- Python 3.12.10 (based off my testing, there are a lot of issues if using 3.13)
 - pip
 
 ### Installation
@@ -30,8 +30,21 @@ cd url-shortener
 python3 -m venv venv
 source venv/bin/activate // On Windows: venv\Scripts\activate // gitbash: venv/Scripts/activate
 
-3. Install dependencies:
+3. Install backend dependencies:
 pip install -r requirements.txt
+
+4. Install Frontend Dependencies:
+npm install
+
+5. Run each app
+    -frontend: npm run dev
+    -backend: python -m flask run --app urlshortener.app --port 5000
+    both apps are connected using cors
+
+6. Tests
+    -backend: run from root, either way this runs the command by explicitly calling my tests, python -m pytest tests/tests_app.py -v
+
+    -frontend: in progress
 
 ## Development Status
 
@@ -39,7 +52,7 @@ pip install -r requirements.txt
 - [X] Database models
 - [X] Core shortening logic
 - [X] API endpoints
-- [X] Testing
+- [ ] Testing
 
 ## License
 
