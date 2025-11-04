@@ -37,9 +37,9 @@ pip install -r requirements.txt
 
 - [x] Project setup
 - [X] Database models
-- [ ] Core shortening logic
-- [ ] API endpoints
-- [ ] Testing
+- [X] Core shortening logic
+- [X] API endpoints
+- [X] Testing
 
 ## License
 
