@@ -42,9 +42,7 @@ npm install
     both apps are connected using cors
 
 6. Tests
-    -backend: run from root, either way this runs the command by explicitly calling my tests, python -m pytest tests/tests_app.py -v
-
-    -frontend: in progress
+    -backend: python -m pytest -v, implicitly call tests from root
 
 ## Development Status
 
@@ -52,7 +50,7 @@ npm install
 - [X] Database models
 - [X] Core shortening logic
 - [X] API endpoints
-- [ ] Testing
+- [X] Testing
 
 ## License
 
