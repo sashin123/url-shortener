@@ -129,9 +129,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Import after loading env
-from models import db, URLMapping
-from utils import generate_short_code, is_valid_url
-from config import config
+from .models import db, URLMapping
+from .utils import generate_short_code, is_valid_url
+from .config import config
 
 # Initialize Flask app
 app = Flask(__name__)
